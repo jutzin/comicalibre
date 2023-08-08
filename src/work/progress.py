@@ -19,5 +19,5 @@ class ComicalibreProgressWork():
 
   def iterate(self):
     self.steps_taken = self.steps_taken + 1
-    current_progress = self.steps_taken / self.total_steps * 100
+    current_progress = int(self.steps_taken / self.total_steps * 100)
     self.progress_bar.setValue(current_progress)
